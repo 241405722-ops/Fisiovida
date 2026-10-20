@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisioVida | Rehabilitación y Bienestar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo">FisioVida</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#perfil">Profesional</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#consejos">Consejos</a>
+            <a href="#citas">Citas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="portada">
+            <div class="portada-contenido">
+                <p class="etiqueta">REHABILITACIÓN Y BIENESTAR</p>
+                <h1>Recupera tu movimiento, mejora tu vida</h1>
+                <p>
+                    Te ayudamos a conocer la fisioterapia y la importancia
+                    de cuidar tu cuerpo con atención profesional.
+                </p>
+                <a class="boton" href="#servicios">Conoce nuestros servicios</a>
+            </div>
+        </section>
+
+        <section id="perfil" class="seccion">
+            <h2>Conoce a tu fisioterapeuta</h2>
+            <div class="perfil">
+                <img
+                    src="c:\5AP\practica 6\images.jpg"
+                    alt="Fotografía del fisioterapeuta"
+                    class="foto-doctor"
+                >
+                <h3>Dr. Alejandro Ramírez López</h3>
+                <p><strong>Profesión:</strong> Licenciado en Fisioterapia</p>
+                <p><strong>Edad:</strong> 35 años (dato ficticio)</p>
+                <p>
+                    Es un profesional ficticio que representa a una persona
+                    amable, paciente y responsable, interesada en ayudar a
+                    sus pacientes a mejorar su movilidad.
+                </p>
+                <p><strong>Objetivo:</strong> Promover el movimiento,
+                    la prevención y el bienestar físico.</p>
+            </div>
+        </section>
+<center>
+        <section id="servicios" class="seccion fondo">
+            <h2>Nuestros servicios</h2>
+            <p class="introduccion">
+                Conoce algunas áreas en las que puede intervenir
+                un profesional de fisioterapia.
+            </p>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <div class="emoji"></div>
+                    <h3>Rehabilitación física</h3>
+                    <p>
+                        Apoyo para recuperar movilidad y función
+                        después de una lesión, según valoración profesional.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="emoji"></div>
+                    <h3>Movilidad muscular</h3>
+                    <p>
+                        Ejercicios y actividades adaptados a las
+                        necesidades de cada persona.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="emoji"></div>
+                    <h3>Postura corporal</h3>
+                    <p>
+                        Orientación para mejorar hábitos posturales
+                        en las actividades cotidianas.
+                    </p>
+                </article>
+
+
+                <article class="tarjeta">
+                    <div class="emoji"></div>
+                    <h3>Prevención de lesiones</h3>
+                    <p>
+                        Recomendaciones generales para realizar
+                        actividades físicas de manera segura.
+                    </p>
+                </article>
+            </center>
+            </div>
+        </section>
+
+        <section id="consejos" class="seccion">
+            <h2>Consejos para cuidar tu cuerpo</h2>
+            <div class="consejos">
+                <p>✓ Mantén una postura cómoda al estudiar.</p>
+                <p>✓ Realiza pausas cuando pases mucho tiempo sentado.</p>
+                <p>✓ Practica actividad física adecuada para ti.</p>
+                <p>✓ Evita forzar movimientos que te causen dolor.</p>
+                <p>✓ Busca atención profesional si tienes molestias persistentes.</p>
+            </div>
+            <p class="aviso">
+                Estos consejos son informativos y no sustituyen
+                una valoración individual de fisioterapia o médica.
+            </p>
+        </section>
+
+        <section id="citas" class="seccion fondo">
+            <h2>Solicita información sobre una cita</h2>
+            <p class="introduccion">
+                Completa el formulario de demostración.
+            </p>
+
+            <form id="formulario-cita">
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Rehabilitación física</option>
+                    <option>Movilidad muscular</option>
+                    <option>Postura corporal</option>
+                    <option>Prevención de lesiones</option>
+                    <option>Información general</option>
+                </select>
+
+                <label for="fecha">Fecha de interés</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <button type="submit" class="boton">
+                    Enviar solicitud de prueba
+                </button>
+
+                <p id="mensaje" role="status" aria-live="polite"></p>
+            </form>
+
+            <p class="aviso">
+                Este formulario es una demostración escolar.
+                No envía datos ni confirma citas reales.
+            </p>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>¿Quieres conocer más sobre la fisioterapia?</p>
+            <p>Correo de ejemplo:dr.alejandro@gmail.com</p>
+            <p>Teléfono: 3411356398</p>
+            <p>Ubicación: av camaron sabalo #51, local B</p>
+            <p class="aviso">
+                Los datos de contacto son ilustrativos y deben sustituirse
+                por datos autorizados si se utiliza un servicio real.
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>

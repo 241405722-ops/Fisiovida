@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #263b39;
+    line-height: 1.6;
+}
+
+.encabezado {
+    background: #176b60;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c5f4e7;
+}
+
+.portada {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #d9f3e9, #f4fbf8);
+}
+
+.portada-contenido {
+    max-width: 700px;
+}
+
+.etiqueta {
+    color: #176b60;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #14574e;
+}
+
+.portada-contenido p {
+    margin-bottom: 22px;
+}
+
+.boton {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    background: #176b60;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #104c44;
+}
+
+.seccion {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #176b60;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.fondo {
+    background: #f0f8f5;
+}
+
+.perfil {
+    max-width: 650px;
+    margin: auto;
+    padding: 28px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px #00000012;
+}
+
+.perfil h3 {
+    color: #176b60;
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+.perfil p {
+    margin: 10px 0;
+}
+
+.foto-doctor {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #d9eee8;
+    background: #e0f2ec;
+}
+
+.introduccion {
+    margin-bottom: 30px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    color: #176b60;
+    margin: 12px 0;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.consejos {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.consejos p {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f0f8f5;
+    border-radius: 8px;
+}
+
+.aviso {
+    color: #5a6c68;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b9ccc6;
+    border-radius: 7px;
+    font-size: 16px;
+    background: white;
+}
+
+form input:focus,
+form select:focus {
+    outline: 2px solid #78b9a7;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: #176b60;
+    font-weight: bold;
+}
+
+footer {
+    background: #124d45;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+@media (max-width: 650px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .portada {
+        padding: 50px 7%;
+    }
+
+    .seccion {
+        padding: 45px 6%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil {
+        padding: 20px;
+    }
+}
